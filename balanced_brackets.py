@@ -1,20 +1,16 @@
-# LIFO - last in first out
 class Stack:
     def __init__(self):
         self.data = []
 
-    # Always
     def push(self, item):
         print(f"Pushing: {item}")
         self.data.append(item)
 
-    # Always
     def pop(self):
         popped = self.data.pop(-1)
         print(f"Popping: {popped}")
         return popped
 
-    # Optional
     def peek(self):
         print("Peeking: ")
         return self.data[-1]
@@ -32,10 +28,10 @@ class Stack:
 # check to see if the provided string
 # has balanced brackets
 # should return True or False
-def balancedBrackets(code):
+def balanced_brackets(code):
     pass
 
 
-print(balancedBrackets("{age(cz{gge(gea[aa]gadz)}gea)}"))  # True
-print(balancedBrackets("{age(cz{gge(gea[aa]gadz)gea)}"))  # True
-print(balancedBrackets("{age(cz{gge(gea[aa]gadz)}gea)}}"))  # False
+print(balanced_brackets("{age(cz{gge(gea[aa]gadz)}gea)}"))  # True
+print(balanced_brackets("{age(cz{gge(gea[aa]gadz)gea)}"))  # True
+print(balanced_brackets("{age(cz{gge(gea[aa]gadz)}gea)}}"))  # False
