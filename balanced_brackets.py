@@ -35,3 +35,7 @@ def balanced_brackets(code):
 print(balanced_brackets("{age(cz{gge(gea[aa]gadz)}gea)}"))  # True
 print(balanced_brackets("{age(cz{gge(gea[aa]gadz)gea)}"))  # False
 print(balanced_brackets("{age(cz{gge(gea[aa]gadz)}gea)}}"))  # False
+print(balanced_brackets("[{()[()]}]"))  # True
+print(balanced_brackets("[{()[(]}]"))  # False
+print(balanced_brackets("[}"))  # False
+print(balanced_brackets(""))  # True
